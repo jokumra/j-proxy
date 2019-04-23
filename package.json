@@ -8,10 +8,11 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "proxy": "nodemon server/index.js",
-    "build": "webpack -d --watch"
+    "proxy": "node server/index.js",
+    "build": "webpack -d"
   },
   "dependencies": {
+    "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
@@ -24,8 +25,5 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
-  },
-  "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
   }
 }

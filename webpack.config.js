@@ -4,10 +4,10 @@ module.exports = {
  mode: 'development',
  entry: {
    vendor: ['styled-components'],
-   images: '../j-service/client/src/app.jsx',
-   descriptions: '../m-service/client/index.jsx',
-   reviews: '../v-service/client/app.jsx',
-   morehomes: '../a-service/client/MoreHomes.jsx'
+   images: '../j-service/client/src/app.jsx'
+//   descriptions: '../m-service/client/index.jsx',
+ //  reviews: '../v-service/client/app.jsx',
+  // morehomes: '../a-service/client/MoreHomes.jsx'
  },
  externals: {
    'styled-components': 'styled'

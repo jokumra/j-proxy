@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.get('/house_images', (req,res) => {
    let id = req.query.id;
    console.log("Request Query:", id);
-   let images_url = "http://localhost:3003/house_images?id=" + id;
+   let images_url = "http://52.87.228.239:3003/house_images?id=" + id;
    request(images_url, { json: true }, (error, response, body) => {
      if (error) { return console.log(error); }
      //console.log(body);
@@ -24,7 +24,7 @@ app.get('/house_images', (req,res) => {
 
 app.get('/description', (req, res) => {
   let id= req.query._id;
-  let description_url = "http://localhost:3210/description?_id=" + id;
+  let description_url = "http://18.188.174.153:3210/description?_id=" + id;
   request(description_url, { json: true }, (error, response, body) => {
     if (error) { return console.log(error); }
     //console.log(body);
@@ -35,7 +35,7 @@ app.get('/description', (req, res) => {
 
 app.get('/morehomes', (req, res) => {
   let id= req.query.id;
-  let morehome_url = "http://localhost:3000/morehomes";
+  let morehome_url = "http://52.27.3.181:3000/morehomes?id=" + id;
   request(morehome_url, { json: true }, (error, response, body) => {
     if (error) { return console.log(error); }
     //console.log(body);
@@ -46,7 +46,7 @@ app.get('/morehomes', (req, res) => {
 
 app.get('/totalReviews', (req, res) => {
   let id= req.query.id;
-  let reviews_url = "http://localhost:3004/totalReviews?id=" + id;
+  let reviews_url = "http://reviews.pfuzgfpajh.us-west-2.elasticbeanstalk.com/totalReviews?id=" + id;
   request(reviews_url, { json: true }, (error, response, body) => {
     if (error) { return console.log(error); }
     //console.log(body);
